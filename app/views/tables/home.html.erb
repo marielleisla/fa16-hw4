@@ -1,0 +1,42 @@
+<h1>Cats:</h1>
+<div id="cats">
+    <ul class="fields">
+        <% @cats.each do |cat| %>
+            <li>
+                <b>Name: </b>
+                <%= cat.name %>
+            </li>
+        <% end %>
+    </ul>
+</div>
+<h1>Users:</h1>
+<div id="users">
+    <ul class="fields">
+        <% @users.each do |user| %>
+            <li>
+                <b>Username: </b>
+                <%= user.username %>
+                <br>
+                <b>Email: </b>
+                <%= user.email %>
+                <br>
+                <b>Age: </b>
+                <%= user.age %>
+            </li>
+        <% end %>
+    </ul>
+</div>
+<h1>Todos:</h1>
+<div id="todos">
+    <ul class="fields">
+        <% @todos.each do |todo| %>
+            <li>
+                <b>Task: </b>
+                <%= todo.tasks %>
+                <br>
+                <b>Finished: </b>
+                <%= todo.finished %>
+            </li>
+        <% end %>
+    </ul>
+</div>
